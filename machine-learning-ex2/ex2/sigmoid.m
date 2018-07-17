@@ -9,15 +9,7 @@ g = zeros(size(z));
 % Instructions: Compute the sigmoid of each value of z (z can be a matrix,
 %               vector or scalar).
 
-if size(z) > 1;
-	for it = 1:size(z);
-		% aqui me falta saber que pasa si es una matriz o vector.
-		g = 1 / (1 + exp(-it));
-	end
-
-else
-	g = 1 / (1 + exp(-z));
-end
+g = 1 ./ (1 + exp(-z));
 
 % =============================================================
 
